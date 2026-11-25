@@ -1,0 +1,21 @@
+# Stable ids: bookings reference them, and seed.py upserts by id. Prices are INR per hour slot.
+RESOURCES = [
+    {"id": "r1", "name": "Maruti Suzuki Swift", "category": "Hatchback", "price_per_slot": 250, "rating": 4.4,
+     "image": "https://picsum.photos/seed/swift/800/600", "capacity": 5,
+     "description": "Nimble petrol hatchback with a manual gearbox. Easy to park and great on fuel for city runs."},
+    {"id": "r2", "name": "Hyundai i20", "category": "Hatchback", "price_per_slot": 300, "rating": 4.5,
+     "image": "https://picsum.photos/seed/i20/800/600", "capacity": 5,
+     "description": "Comfortable premium hatchback with a touchscreen, rear camera and smooth automatic option."},
+    {"id": "r3", "name": "Honda City", "category": "Sedan", "price_per_slot": 400, "rating": 4.7,
+     "image": "https://picsum.photos/seed/city/800/600", "capacity": 5,
+     "description": "Spacious sedan with a large boot and a refined ride, ideal for business trips and family outings."},
+    {"id": "r4", "name": "Hyundai Creta", "category": "SUV", "price_per_slot": 550, "rating": 4.6,
+     "image": "https://picsum.photos/seed/creta/800/600", "capacity": 5,
+     "description": "Compact SUV with high ground clearance, sunroof and a punchy diesel engine for highway drives."},
+    {"id": "r5", "name": "Toyota Innova Crysta", "category": "MUV", "price_per_slot": 700, "rating": 4.8,
+     "image": "https://picsum.photos/seed/innova/800/600", "capacity": 7,
+     "description": "Seven-seat people mover with captain seats and dual-zone AC. Perfect for group travel."},
+    {"id": "r6", "name": "Mahindra Thar", "category": "SUV", "price_per_slot": 650, "rating": 4.7,
+     "image": "https://picsum.photos/seed/thar/800/600", "capacity": 4,
+     "description": "Iconic 4x4 off-roader with a removable soft top. Built for weekend getaways and rough roads."},
+]  # fmt: skip

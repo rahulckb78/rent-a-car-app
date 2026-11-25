@@ -1,0 +1,23 @@
+services:
+  - type: web
+    # The service name becomes the public URL (<name>.onrender.com) and must be globally unique.
+    name: rentacar
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: BUSINESS_TZ
+        value: Asia/Kolkata
+      - key: SLOT_MINUTES
+        value: "60"
+      - key: OPEN_HOUR
+        value: "8"
+      - key: CLOSE_HOUR
+        value: "20"
+      - key: MAX_SLOTS_PER_BOOKING
+        value: "4"
+
